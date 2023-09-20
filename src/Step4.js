@@ -7,7 +7,7 @@ import { chooseSauce } from './rootSlice';
 export const Step4 = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const sauce = useSelector(state => state.sauce);
+  const sauce = useSelector(state => state.root.sauce);
   const unwatched = sauce;
   const { register, handleSubmit } = useForm();
 

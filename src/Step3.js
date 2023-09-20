@@ -7,7 +7,7 @@ import { chooseCheese } from './rootSlice';
 export const Step3 = () => {
   const dispatch = useDispatch();
   const navigator = useNavigate();
-  const cheese = useSelector(state => state.cheese);
+  const cheese = useSelector(state => state.root.cheese);
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {

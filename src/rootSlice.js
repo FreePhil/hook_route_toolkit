@@ -17,5 +17,5 @@ const rootSlice = createSlice({
   }
 })
 
-export const reducer = rootSlice.reducer;
+export const rootReducer = rootSlice.reducer;
 export const { chooseBase, chooseCrust, chooseSauce, chooseCheese, reset } = rootSlice.actions;

@@ -10,7 +10,7 @@ export const Step1 = () => {
   // )
   const dispatch = useDispatch();
   const navigator = useNavigate();
-  const base = useSelector(state => state.base);
+  const base = useSelector(state => state.root.base);
   const { register, handleSubmit } = useForm();
 
   console.log(base);

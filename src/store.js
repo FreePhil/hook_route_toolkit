@@ -1,6 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { reducer } from './rootSlice';
+import { rootReducer } from "./rootSlice";
+import { inventoryReducer } from "./inventorySlice";
 
 export const store = configureStore({
-  reducer
+  reducer: {
+    root: rootReducer,
+    inventory: inventoryReducer,
+  },
 });

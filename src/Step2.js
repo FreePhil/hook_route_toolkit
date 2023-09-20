@@ -7,7 +7,7 @@ import { chooseCrust } from './rootSlice';
 export const Step2 = () => {
   const dispatch = useDispatch();
   const navigator = useNavigate();
-  const crust = useSelector(state => state.crust);
+  const crust = useSelector(state => state.root.crust);
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {

@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { reset } from './rootSlice';
 
 export const Result = () => {
-  const state = useSelector(state => state);
+  const state = useSelector(state => state.root);
   const dispatch = useDispatch();
 
   function reset() {
